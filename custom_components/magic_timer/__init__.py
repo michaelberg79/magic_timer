@@ -131,7 +131,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
                 )
 
                 llm_text = f"Nachricht: Ich sollte ich an folgendes erinnern: {timer['message']}"
-                hass.services.async_call(
+                await hass.services.async_call(
                     "assist_satellite",
                     "start_conversation",
                     {
