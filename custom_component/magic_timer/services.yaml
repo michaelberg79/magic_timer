@@ -1,0 +1,22 @@
+add_timer:
+  name: "Magic Timer hinzufügen"
+  description: "Erstellt einen neuen persistenten Timer mit Freitexthinweis und Raumzuordnung."
+  fields:
+    duration:
+      name: "Dauer"
+      description: "Dauer des Timers (z.B. '00:05:00' für 5 Minuten oder als Zahl in Minuten)."
+      required: true
+      selector:
+        text:
+    message:
+      name: "Nachricht/Text"
+      description: "Was passiert, wenn der Timer abläuft? (z.B. 'Kuchen aus dem Ofen')"
+      required: true
+      selector:
+        text:
+    area:
+      name: "Raum"
+      description: "Der Raum (die Area), in dem der Timer läuft oder angesagt werden soll."
+      required: false
+      selector:
+        area:

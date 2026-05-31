@@ -1,0 +1,25 @@
+{
+  "config": {
+    "flow_title": "Magic-Timer",
+    "step": {
+      "user": {
+        "title": "Möchtest du den Magic Timer wirklich einrichten?"
+      }
+    }
+  },
+  "options": {
+    "flow_title": "Magic-Timer",
+    "step": {
+      "init": {
+        "title": "Magic Timer Raumzuordnung",
+        "description": "Hier findest du alle aktiven Räume. Wähle pro Bereich aus, welcher Lautsprecher für Sprachausgaben und Timer-Töne genutzt werden soll:",
+        "sections": {
+          "room_assist_assignments": {
+            "name": "Raum - Assist - Gerätezuordnung",
+            "description": "Wähle den primären Assistenten für die Räume."
+          }
+        }
+      }
+    }
+  }
+}
